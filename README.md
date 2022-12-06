@@ -4,7 +4,7 @@
 
 MongoDB is a type of NoSQL database which is open-sourced and widely used in data science and machine learning in form of a database. Hence, knowledge of it is important in the long run, especially in the field of data science and analytics.
 
-### Terminologies
+### MongoDB Terminologies
 - Document
 - Collection
 ### MongoDB Tools 

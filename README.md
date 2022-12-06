@@ -62,3 +62,13 @@ To show all rows in a collection
 ```bash
 db.comments.find()
 ```
+To show all the rows in a collection in a prettified 
+
+db.comments.find().pretty()
+
+
+To search rows in MongoDB database
+```bash
+db.comments.find({'language':"python"})
+```
+

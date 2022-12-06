@@ -72,4 +72,13 @@ To search rows in MongoDB database
 ```bash
 db.comments.find({'language':"python"})
 ```
+To sort the output rows
+```bash
+db.collectionName.sort(<objectName>:1 or -1)
+Ex:-
+sort in asc. order
+db.comments.find().sort({language:1})
 
+sort in desc.order
+db.comments.find().sort({language:-1})
+```

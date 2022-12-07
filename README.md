@@ -82,3 +82,10 @@ db.comments.find().sort({language:1})
 sort in desc.order
 db.comments.find().sort({language:-1})
 ```
+To replace an values in a row
+```bash
+db.collectionName.replace(filter,replacement,options)
+Ex:-
+db.comments.replaceOne({language:"C"},{"language":"C++"})
+```
+

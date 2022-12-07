@@ -89,8 +89,18 @@ Ex:-
 db.comments.replaceOne({language:"C"},{"language":"C++"})
 ```
 Note:-
-- If a record that is not available in the collection but we wantto update no operation will perform.
+- If a record that is not available in the collection but we want to update no operation will perform.
 - If a record that is not available in the collection but we want to update if we set upsert is true than it is going to be inserted as new record.
 ```bash
 {upsert:true}
 ```
+### MongoDB Operators
+rename operator:- This operator update or rename the filed only and it only work for only one field.
+```bash
+Ex:-
+ db.comments.update({language:'Python'},{$rename:{language:'lang'}})
+ ```
+ rename operator:- This operator update or rename the filed only and it only work for all if not mention any filter.
+ ```bash
+ db.comments.update({},{$rename:{language:'lang'}})
+ ```

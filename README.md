@@ -103,4 +103,22 @@ Ex:-
  rename operator:- This operator update or rename the filed only and it only work for all if not mention any filter.
  ```bash
  db.comments.update({},{$rename:{language:'lang'}})
+ - have a look in mongoDB doc.
  ```
+
+### MongoDB delete operations in a collection
+To delete many rows or documents from a collection
+```bash
+db.collectionName.deleteMany(filter)
+Ex:-
+db.comments.deleteMany({language:"Python"})
+```
+To delete onr row or documents from a collection
+```bash
+db.collectionName.deleteOne(filter)
+Ex:-
+db.comments.deleteOne({language:"C"})
+```
+
+
+
